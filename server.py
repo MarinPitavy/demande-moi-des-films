@@ -8,6 +8,10 @@ from flask import Flask, request, jsonify, send_from_directory
 from random import randint
 
 from app import chatbot
+try:
+    os.chdir('c:\\users\\marin\\onedrive\\documents\\formation theodo\\demande-moi-des-films')
+except:
+    pass
 
 app = Flask(__name__)
 
